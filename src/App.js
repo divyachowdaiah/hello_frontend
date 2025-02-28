@@ -4,12 +4,12 @@ function App() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    fetch("https://hello-eor5z28ou-divyachowdaiahs-projects.vercel.app/")
+    fetch("https://hello-backend-mcb58pzc6-divyachowdaiahs-projects.vercel.app/")
       .then((res) => res.json())
       .then((data) => setMessage(data.message));
   }, []);
 
-  return <h1>hi</h1>;
+  return <h1>{message}</h1>;
 }
 
 export default App;
